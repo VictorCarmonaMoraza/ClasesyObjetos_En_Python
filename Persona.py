@@ -15,6 +15,14 @@ persona1 = Persona('Juan','Carmona',28)
 #Imprimimos valores de la instancia persona1
 print(f'Objeto numero 1 {persona1.nombre} {persona1.apellido} {persona1.edad}')
 
+
+
+persona1.nombre = 'Victor Manuel'
+persona1.apellido = 'Carmona'
+persona1.edad = 42
+#Imprimimos el objeto con los nuevos valores
+print(f'Objeto numero 1 {persona1.nombre} {persona1.apellido} {persona1.edad}')
+
 #Creacion de un segundo objeto de tipo Persona
 persona2 = Persona('Karla','Gomez',45)
 
