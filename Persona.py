@@ -17,6 +17,9 @@ persona1 = Persona('Juan','Carmona',28)
 
 #Imprimimos valores de la instancia persona1
 persona1.mostrar_detalle()
+#Persona.mostrar_detalle(persona1)
+persona1.telefono = '666 666 777'
+print(persona1.telefono)
 
 
 #Creacion de un segundo objeto de tipo Persona
