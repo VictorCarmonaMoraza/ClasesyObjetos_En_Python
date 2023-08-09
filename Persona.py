@@ -2,18 +2,20 @@
 # Creacion de una clase
 class Persona:
     #Metodo inicializador
-    def __init__(self, nombre, apellido, edad):
+    def __init__(self, nombre, apellido, edad, *valoresTupla, **valoresDiccionario):
         #Atributos
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+        self.tupla = valoresTupla
+        self.diccionario = valoresDiccionario
 
     def mostrar_detalle(self):
-        print(f'Persona: {self.nombre} {self.apellido} {self.edad}')
+        print(f'Persona: {self.nombre} {self.apellido} {self.edad} {self.tupla} {self.diccionario}')
 
 
 #Creacion de un objeto de esta clase
-persona1 = Persona('Juan','Carmona',28)
+persona1 = Persona('Juan','Carmona',28, '4455225515',2,5,9,10, p='pedro',s='juan')
 
 #Imprimimos valores de la instancia persona1
 persona1.mostrar_detalle()
